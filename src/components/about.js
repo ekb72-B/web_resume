@@ -29,9 +29,9 @@ class About extends Component {
                <div className="columns contact-details">
                   <h2>Contact Details</h2>
                   <p className="address">
-						   <span>{Esuvat Bomani}</span><br />
-						   <span>{San Jose}<br />
-						         {CA}, {95126}
+						   <span>{name}</span><br />
+						   <span>{city}<br />
+						         {state}, {zip}
                    </span><br />
 						   <span>{phone}</span><br />
                      <span><a href="mailto:tbakerx@gmail.com">{email}</a></span>
