@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import ReactGA from "react-ga";
 import $ from "jquery";
 import "./App.css";
-import Header from "./Header.js";
-import Footer from "./Footer.js";
-import About from "./About.js";
-import Resume from "./Resume.js";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Resume from "./components/Resume.js";
 // import Contact from "./Components/Contact";
 // import Testimonials from "./Components/Testimonials";
 // import Portfolio from "./Components/Portfolio";
@@ -30,7 +30,8 @@ class App extends Component {
       success: function (data) {
         this.setState({ resumeData: data });
         setTimeout(() => {
-          load.outerHTML = "";
+            load.outerHTML = "";
+          
         }, 500);
       }.bind(this),
       error: function (xhr, status, err) {
